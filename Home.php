@@ -91,12 +91,13 @@ $massage='<!doctype html><html> <head> <meta name="viewport" content="width=devi
 
  <table border='0' cellpadding='0' cellspacing='0' class='btn btn-primary'> <tbody> <tr> <td align='left'> <table border='0' cellpadding='0' cellspacing='0'> <tbody> <tr> <td>
  </td> </tr> </tbody> </table> </td> </tr> </tbody> </table>
- <br><p>{$des}</p> </td> </tr> </table> </td> </tr> <!-- END MAIN CONTENT AREA --> </table> <!-- START FOOTER --> <div class='footer'> <table border='0' cellpadding='0' cellspacing='0'> <tr> <td class='content-block'> <span class='apple-link'>rtlearn.com | Feminism | Culture | Law | Feminists Rising</span> <br>Do not like these emails? <a href='https://rtlearn.000webhostapp.com/unsubscrib.php?email={$to}'>Unsubscribe</a>. </td> </tr> <tr> <td class='content-block powered-by'> Powered by <a href='https://rtlearn.com'>rtlearn</a>. </td> </tr> </table> </div> <!-- END FOOTER --> <!-- END CENTERED WHITE CONTAINER --> </div> </td> <td>&nbsp;</td> </tr> </table> </body></html>";
+ <br><p>{$des}</p> </td> </tr> </table> </td> </tr> <!-- END MAIN CONTENT AREA --> </table> <!-- START FOOTER --> <div class='footer'> <table border='0' cellpadding='0' cellspacing='0'> <tr> <td class='content-block'> <span class='apple-link'>rtlearn.com | Feminism | Culture | Law | Feminists Rising</span> <br>Do not like these emails?
+ <a href='https://rtlearn.000webhostapp.com/unsubscrib.php?email={$to}'>Unsubscribe</a>. </td> </tr> <tr> <td class='content-block powered-by'> Powered by <a href='https://rtlearn.com'>rtlearn</a>. </td> </tr> </table> </div> <!-- END FOOTER --> <!-- END CENTERED WHITE CONTAINER --> </div> </td> <td>&nbsp;</td> </tr> </table> </body></html>";
 sendTO($massage,$to,$subject);
 }
 else
 {
-   echo "<script> var i='{$local_url}/?massage=Cookies expire';window.location.href=i; </script>"; 
+   echo "<script> var i='{$local_url}/?massage=Cookies expire';window.location.href=i; </script>";
 }
 ?>
   </body>
