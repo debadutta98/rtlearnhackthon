@@ -7,17 +7,17 @@ $email=$_POST["email"];
 $password=$_POST["password"];
 if(isset($_COOKIE['email']))
 {
-   echo '<script> var i="https://rtlearn.000webhostapp.com/Home.php?massage=You are successfully logedin";window.location.href=i; </script>';  
+   echo "<script> var i='{$local_url}/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
 }
 else
 {
    $sql = "SELECT email,password,verify FROM user where email='$email' and password='$password'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-if ($result->num_rows >0 && $row['verify']=='1') 
+if ($result->num_rows >0 && $row['verify']=='1')
 {
-    echo "<script> 
-    function setCookie(cname, cvalue, exdays) 
+    echo "<script>
+    function setCookie(cname, cvalue, exdays)
 {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -25,18 +25,18 @@ if ($result->num_rows >0 && $row['verify']=='1')
   document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 }
 setCookie('email',`{$email}`);
-    var i='https://rtlearn.000webhostapp.com/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
+    var i='{$local_url}/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
 }
 else if($result->num_rows >0 && $row['verify']=='0')
 {
     $num=rand(1000,9999);
     $sql1 = "UPDATE user SET otp='{$num}' WHERE email='$email'";
-if ($conn->query($sql1) === TRUE) 
+if ($conn->query($sql1) === TRUE)
 {
     resend($num,$email);
-    $str='<script> var i="https://rtlearn.000webhostapp.com/verification.php?massage=Please register&email=emailname";window.location.href=i; </script>';
- echo str_replace("emailname","{$email}",$str);
-} 
+    $str="<script> var i='{$local_url}/verification.php?massage=Please register&email=emailname';window.location.href=i; </script>";
+ echo $str;
+}
 else
 {
   echo "Error updating record: " . $conn->error;
@@ -44,8 +44,8 @@ else
 }
 else
 {
-   echo '<script> var i="https://rtlearn.000webhostapp.com/register.php?massage=Please register";window.location.href=i; </script>';
-} 
+   echo "<script> var i='{$local_url}/register.php?massage=Please register';window.location.href=i; </script>";
+}
 }
 function resend($otp,$email)
 {

@@ -2,6 +2,7 @@
 include 'connect.php';
 include 'send.php';
 include 'Log.php';
+include 'Loading.html';
 $email=$_POST["email"];
 $password=$_POST["password"];
 $name=$_POST["name"];
