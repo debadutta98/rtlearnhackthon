@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 function sendTO($message,$to,$subject)
 {
 //Load Composer's autoloader
-require 'mail/vendor/autoload.php';
+require 'vendor/autoload.php';
 require 'PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
@@ -17,7 +17,7 @@ try {
    $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
-$mail->SMTPDebug  = 0;  
+$mail->SMTPDebug  = 0;
 $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
