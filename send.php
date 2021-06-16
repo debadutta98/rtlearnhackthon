@@ -23,7 +23,7 @@ $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
 $mail->Host       = "smtp.mail.yahoo.com";
 $mail->Username   = "debadutta_panda90@yahoo.com";
-$mail->Password   = "ezunmkydvslziowu";
+$mail->Password   = "kuazrgjmiakycsjh";
     $mail->setFrom('debadutta_panda90@yahoo.com', 'rtlearn');
       //Add a recipient
     $mail->addAddress("{$to}");              //Name is optional
