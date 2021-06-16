@@ -17,7 +17,7 @@ try {
    $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->Mailer = "smtp";
-$mail->SMTPDebug  = 0;
+$mail->SMTPDebug  = 1;
 $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
@@ -40,10 +40,10 @@ $mail->Password   = "kuazrgjmiakycsjh";
    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->Send()) {
-  //echo "Error while sending Email.";
-  //var_dump($mail);
+echo "Error while sending Email.";
+  var_dump($mail);
 } else {
- // echo "Email sent successfully";
+  echo "Email sent successfully";
 }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

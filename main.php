@@ -21,7 +21,7 @@ if ($conn->query($sql) === TRUE)
     $subject="relearn email verification";
 
     sendTo($massage,$email,$subject);
-    echo "<script> var i='{$local_url}/verification.php?massage=Check your inbox';window.location.href=i; </script>";
+    echo "<script> var i='{$local_url}/verification.php?massage=Check your inbox&email={$email}';window.location.href=i; </script>";
 }
 else
 {
