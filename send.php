@@ -38,7 +38,6 @@ $mail->Password   = "kuazrgjmiakycsjh";
     $mail->Subject = "{$subject}";
     $mail->Body    = "{$message}";
    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-sleep(60);
 if(!$mail->Send()) {
 echo "Error while sending Email.";
   var_dump($mail);
@@ -48,5 +47,6 @@ echo "Error while sending Email.";
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+sleep(60);
 }
 ?>
