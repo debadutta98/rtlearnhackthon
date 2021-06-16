@@ -1,8 +1,8 @@
 <?php
-$servername ="127.0.0.1";
-$username = "id17051437_debadutta";
-$password = "6|C3[]||8daDZ!_=";
-$dbname="id17051437_rtlearn";
+$servername ="bybyoiggty0tldniejiq-mysql.services.clever-cloud.com";
+$username = "uyse9ekqzvdlvvtk";
+$password = "qj4SinChZJJexo3vpaKI";
+$dbname="bybyoiggty0tldniejiq";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$dbname);
