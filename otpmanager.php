@@ -1,6 +1,7 @@
 <?php
 include 'connect.php';
-include 'Log.php'
+include 'Log.php';
+include 'Loading.html';
 $url=$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $url_components = parse_url($url);
 parse_str($url_components['query'], $params);
