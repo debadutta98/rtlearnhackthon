@@ -43,6 +43,7 @@ Here I am
 <?php
 require 'connect.php';
 require 'send.php';
+  require 'Log.php';
 $num=rand(1,500);
 $api_url = "http://xkcd.com/{$num}/info.0.json";
 $json_data = file_get_contents($api_url);
