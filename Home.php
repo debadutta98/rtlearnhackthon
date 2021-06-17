@@ -79,7 +79,7 @@ const params = Object.fromEntries(urlSearchParams.entries());
 if(isset($_COOKIE['email']))
 {
 $to=$_COOKIE['email'];
-$sql = "SELECT email FROM user where email='{$to}'";
+$sql = "SELECT email,verify FROM user where email='{$to}'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 if($result->num_rows >0 && $row['verify']=='1')
