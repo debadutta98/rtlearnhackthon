@@ -1,3 +1,10 @@
+<?php
+include 'Log.php';
+if(isset($_COOKIE['email']))
+{
+echo "<script> var i='{$local_url}/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
+}
+?>
 <html>
   <head>
     <title>rtlearn</title>
@@ -33,13 +40,6 @@
     </div>
 </div>
 </section>
-<?php
-include 'Log.php';
-if(isset($_COOKIE['email']))
-{
-echo "<script> var i='{$local_url}/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
-}
-?>
 <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
