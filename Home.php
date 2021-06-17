@@ -98,7 +98,7 @@ sendTO($massage,$to,$subject);
 }
 else
 {
-   echo "<script> var i='{$local_url}/?massage= Please Login';window.location.href=i; </script>";
+   echo "<script> var i='{$local_url}/checklogin.php';window.location.href=i; </script>";
 }
 ?>
   </body>
