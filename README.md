@@ -1,8 +1,8 @@
 # rtlearnhackthon
-<hr>
+<hr/>
 weblink:- https://rtlearn-dev.herokuapp.com
-<hr>
-# Problem statement
+<hr/>
+<b style="font-size:150px;">Problem statement</b>
 
 Please create a simple PHP application that accepts a visitor’s email address and emails them random XKCD comics every five minutes.
 Your app should include email verification to avoid people using others’ email addresses.
