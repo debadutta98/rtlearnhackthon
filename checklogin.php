@@ -7,7 +7,7 @@ $email=$_POST["email"];
 $password=$_POST["password"];
 if(isset($_COOKIE['email']))
 {
-   echo "<script> var i='{$local_url}/Home.php?massage=You are successfully logedin';window.location.href=i; </script>";
+   echo "<script> var i='/Home.php?massage=You are successfully logedin';window.location.pathname=i; </script>";
 }
 else
 {
