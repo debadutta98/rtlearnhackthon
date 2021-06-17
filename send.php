@@ -23,7 +23,7 @@ $mail->SMTPSecure = "ssl";
 $mail->Port       = 465;
 $mail->Host       = "smtp.mail.yahoo.com";
 $mail->Username   = "debadutta_panda90@yahoo.com";
-$mail->Password   = "kuazrgjmiakycsjh";
+$mail->Password   = "srsnhsyuduhsabir";
     $mail->setFrom('debadutta_panda90@yahoo.com', 'rtlearn');
       //Add a recipient
     $mail->addAddress("{$to}");              //Name is optional
@@ -47,6 +47,5 @@ echo "Error while sending Email.";
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-sleep(60);
 }
 ?>
