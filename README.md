@@ -1,11 +1,9 @@
 # rtlearnhackthon
-
-Problem statement
-
-web link:- https://rtlearn-dev.herokuapp.com
-
+<hr>
+weblink:- https://rtlearn-dev.herokuapp.com
+<hr>
+# Problem statement
 Please create a simple PHP application that accepts a visitor’s email address and emails them random XKCD comics every five minutes.
-
 Your app should include email verification to avoid people using others’ email addresses.
 XKCD image should go as an email attachment as well as inline image content.
 You can visit https://c.xkcd.com/random/comic/ programmatically to return a random comic URL and then use JSON API for details https://xkcd.com/json.html
