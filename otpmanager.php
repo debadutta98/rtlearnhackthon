@@ -5,7 +5,7 @@ include 'Loading.html';
 $url=$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $url_components = parse_url($url);
 parse_str($url_components['query'], $params);
-$otp=$_POST["otp"];
+$otp= isset($params['otp'])?$params['otp']:$_POST["otp"];
 $email=$params['email'];
 $sql="SELECT email,verify FROM user where otp='$otp' and email='$email'";
 $result = $conn->query($sql);
