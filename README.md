@@ -19,7 +19,7 @@ Happy coding
 
 Here is screenshot how the template look like 
 
-|Verification mail|XXCD mail|
+|Verification mail|XKCD mail|
 |-----------------|---------|
 |![](https://raw.githubusercontent.com/debadutta98/rtlearnhackthon/master/Screenshot_20210617-104526_Gmail.jpg)|![](https://raw.githubusercontent.com/debadutta98/rtlearnhackthon/master/Screenshot_20210617-104506_Gmail.jpg)|
 
